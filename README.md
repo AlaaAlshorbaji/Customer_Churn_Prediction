@@ -91,3 +91,44 @@ Typical features in churn datasets:
 3. Install required libraries (see `requirements.txt` if included):
    ```bash
    pip install -r requirements.txt
+---
+
+## 📈 Results Summary
+
+- All trained models were evaluated using accuracy, precision, recall, F1-score, and ROC-AUC metrics.
+- **Random Forest** and **XGBoost** typically performed best due to their ability to handle non-linear relationships and feature interactions.
+- **Logistic Regression** served as a strong baseline model and showed high interpretability.
+- Visualizations such as the confusion matrix and ROC curve provided clear insights into classification performance.
+
+---
+
+## 📌 Key Insights
+
+- Contract type, tenure, and monthly charges were among the most predictive features for churn.
+- Customers on month-to-month contracts or with high monthly charges were more likely to churn.
+- Categorical encoding and handling class imbalance significantly improved model accuracy and recall on minority classes (churned customers).
+
+---
+
+## 💡 Future Improvements
+
+- Apply hyperparameter tuning using `GridSearchCV` or `Optuna` for optimal performance.
+- Use ensemble models or stacking to combine multiple classifiers.
+- Add more behavioral features (e.g., usage frequency, customer support interactions).
+- Integrate SHAP or LIME for more transparent model explanations.
+- Build a user-facing dashboard using Streamlit or Dash to deploy the prediction model interactively.
+
+---
+
+## 👨‍💻 Author
+
+**Alaa Shorbaji**  
+Artificial Intelligence Instructor 
+Machine Learning & Customer Behavior Modeling Specialist  
+
+
+---
+
+## 📜 License
+
+This project is made available for educational and non-commercial use. You may reuse, modify, or extend it with appropriate credit.
